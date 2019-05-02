@@ -1,0 +1,47 @@
+.centringContainer {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  white-space: nowrap;
+  // font-size: 0; // FIXME: why?
+
+  &::before {
+    content: "";
+    height: 100%;
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  &.scrollable {
+    overflow: auto;
+  }
+
+  &:not(.keepFontSize) {
+    font-size: 0;
+  }
+
+  &.relative {
+    position: relative;
+  }
+}
+
+.centerHorizontally {
+  text-align: center;
+}
+
+.centerVertically {
+  .centringContent,
+  &::before {
+    vertical-align: middle;
+  }
+}
+
+.centringContent {
+  max-width: 100%;
+  display: inline-block;
+  white-space: normal;
+  vertical-align: middle;
+  text-align: left;
+}

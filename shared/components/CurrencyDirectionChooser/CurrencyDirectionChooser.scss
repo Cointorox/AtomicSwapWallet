@@ -1,0 +1,96 @@
+.currencySelect {
+  border-radius: 0 6px 6px 0 !important;
+}
+
+.choice {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+}
+
+.title {
+  margin-bottom: 35px;
+}
+
+.text {
+  margin-bottom: 0px;
+  margin-right: 25px;
+}
+
+.formRow {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.formRow > button {
+  margin-left: 80px;
+}
+
+@media screen and (max-width: 690px) {
+  .choice {
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+  .row {
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 15px;
+    &:last-child {
+      justify-content: center;
+      margin-left: 0;
+    }
+  }
+}
+
+@include media-mobile {
+  .formRow {
+    position: relative;
+    margin-top: 60px;
+    margin-bottom: 85px;
+  }
+  .rowLeft {
+    position: absolute;
+    flex-direction: column;
+    align-items: normal;
+  }
+  .rowRight {
+    position: absolute;
+    flex-direction: column;
+    align-items: flex-end;
+    right: 0;
+    text-align: right;
+  }
+  .currencySelectLeft {
+    transform: scale(0.8);
+    left: -15px;
+  }
+  .currencySelectRight{
+    transform: scale(0.8);
+    left: auto;
+    right: -15px;
+  }
+  .formRow > button {
+    position: absolute;
+    bottom: -90px;
+    width: 100%;
+    left: 0;
+    margin: 0;
+    font-size: 15px;
+    span {
+      margin-left: 5px;
+      margin-top: -4px;
+    }
+  }
+  .text {
+    margin: 0;
+  }
+}

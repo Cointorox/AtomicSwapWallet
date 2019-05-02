@@ -1,0 +1,71 @@
+.container {
+  display: flex;
+  align-items: center;
+}
+
+.buttonLan {
+  color: #7c1de9!important;
+
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  margin-right: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.header {
+	height: 88px;
+	width: 100%;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#510ed8+0,510ed8+70,8821ee+100 */
+	background: #510ed8; /* Old browsers */
+	background: -moz-linear-gradient(left, #510ed8 0%, #510ed8 70%, #8821ee 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left, #510ed8 0%,#510ed8 70%,#8821ee 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right, #510ed8 0%,#510ed8 70%,#8821ee 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#510ed8', endColorstr='#8821ee',GradientType=1 ); /* IE6-9 */
+	top: 0;
+	left: 0;
+	right: 0;
+  z-index: 2;
+  transition: position 0.3s ease;
+  position: absolute;
+}
+
+@include media-mobile {
+  .header {
+	  display: flex;
+  }
+}
+
+.header-fixed {
+	position: fixed;
+  height: 88px;
+	animation:slide-down 0.4s;
+}
+
+.header-mobile > div {
+  transform: none;
+  transition: transform 250ms ease;
+}
+
+.header-mobile__hidden > div {
+  transform:  translateY(150px);
+  transition: transform 250ms ease;
+}
+
+@keyframes slide-down {
+    0% {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

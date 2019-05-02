@@ -1,0 +1,46 @@
+#!/bin/sh
+
+# build
+npm run build:mainnet
+
+# update repo or clone
+
+git clone https://caffeinum:$GITHUB_TOKEN@github.com/swaponline/mainnet.build.git
+cd mainnet.build
+git checkout deploy
+git fetch origin
+git reset --hard origin/master
+
+# clean React code from repo
+rm -rf assets
+rm -rf images
+rm -rf fonts
+rm -rf *.css
+rm -rf *.js
+
+# update files in repo
+cp -rf ../build-mainnet/* ./
+# \cp build-mainnet/* mainnet.build/
+
+# commit build to repo
+
+DATE=`date '+%Y-%m-%d %H:%M:%S'`
+git add .
+git commit -m "build $DATE"
+git push --force
+
+# return back to root
+cd ..
+
+echo "Create pull request at"
+echo
+echo "    https://github.com/swaponline/mainnet.build/compare/master...deploy"
+echo
+
+if [ $BOT_TOKEN ]; then
+  curl https://api.telegram.org/bot$BOT_TOKEN/sendMessage?chat_id=-329333490\&text="https://github.com/swaponline/mainnet.build/compare/master...deploy"
+fi
+
+if [ $GITHUB_TOKEN ]; then
+  curl -u caffeinum:$GITHUB_TOKEN -X POST https://api.github.com/repos/swaponline/mainnet.build/pulls -d '{"title":"build","head":"deploy","base":"master"}'
+fi

@@ -1,0 +1,32 @@
+.coins {
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 45px;
+}
+
+.buttonsInRow {
+  margin-top: 50px;
+  .button:first-child {
+    margin-right: 20px;
+  }
+}
+
+.button {
+  width: 200px;
+  padding: 0;
+}
+
+.link {
+  margin-left: 20px;
+}
+
+@include media-mobile {
+	.buttonsInRow {
+	  > div {
+	  	flex-direction: row
+	  }
+	}
+	.button {
+	  width: 160px;
+	}
+}

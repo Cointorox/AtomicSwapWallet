@@ -1,0 +1,46 @@
+.title {
+  font-size: 14px;
+  color: #b2b2b2;
+  background: #ffffff;
+  height: 20px;
+  position: fixed;
+  bottom: 2%;
+  left: 1%;
+  z-index: 1049;
+  padding-bottom: 25px;
+
+  & span {
+    font-weight: bold;
+
+  }
+
+  & svg {
+    display: block;
+    position: relative;
+    top: 2px;
+    height: 3px;
+  }
+}
+
+.connect {
+  color: #3de25b;
+}
+
+.disconnect {
+  color: #e32950;
+}
+
+.copyright {
+  border-top: 1px solid rgba(255,255,255, 0);
+
+  &-text {
+    font-size: 14px;
+    color: rgba(51, 51, 51, 0.6);
+  }
+}
+
+@include media-tablet {
+  .title {
+    font-size: 16px;
+  }
+}

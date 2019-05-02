@@ -1,0 +1,16 @@
+lib
+
+.DS_Store
+.eslintcache
+
+*-lock.*
+
+node_modules
+build-*
+
+app.*.css
+app.*.js
+
+.idea
+
+mainnet.build/
