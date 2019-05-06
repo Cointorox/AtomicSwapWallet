@@ -253,7 +253,7 @@ export default class Header extends Component {
     const { sticky, menuItems, isTourOpen, isShowingMore, path, isPartialTourOpen } = this.state
     const { intl: { locale }, history, pathname, feeds, peer, isSigned, isInputActive } = this.props
 
-    const accentColor = '#510ed8'
+    const accentColor = '#000000'
 
     if (config && config.isWidget) {
       return (
@@ -313,25 +313,25 @@ const tourSteps = [
   },
   {
     selector: '[data-tut="reactour__save"]',
-    content: <FormattedMessage id="Header188" defaultMessage="AtomicSwapWallet.io does NOT store your private keys, please download and keep them in a secured place" />,
+    content: <FormattedMessage id="Header188" defaultMessage="AtomicSwapWallet.io does NOT store your private keys. Please download and keep them in a secure place." />,
   },
   {
     selector: '[data-tut="reactour__balance"]',
-    content: <FormattedMessage id="Header192" defaultMessage="This is your bitcoin balance. You can close your browser, reboot your computer. Your funds will remain safe, just don't forget to save your private keys" />,
+    content: <FormattedMessage id="Header192" defaultMessage="This is your bitcoin balance. Your funds will remain on this wallet even if you close your browser and reboot your computer but please don't forget to save your private keys before you do so!" />,
   },
   {
     selector: '[data-tut="reactour__store"]',
-    content: <FormattedMessage id="Header196" defaultMessage="You can store crypto of different blockchains including Bitcoin, Ethereum, EOS, Bitcoin Cash, Litecoin and various token" />,
+    content: <FormattedMessage id="Header196" defaultMessage="You can store various cryptocurrencies such as Bitcoin, Ethereum, EOS, Bitcoin Cash, Litecoin and various ERC tokens." />,
   },
   {
     selector: '[data-tut="reactour__exchange"]',
-    content: <FormattedMessage id="Header200" defaultMessage="Our killer feature is the peer-to-peer exchange available in our wallet powered by atomic swap technology. You can perfrom swaps with any crypto listed in our wallet." />,
+    content: <FormattedMessage id="Header200" defaultMessage="Try out the awesome peer-to-peer exchange feature today! It's powered by atomic swap technology, allowing you to swap coins and tokens directly with other users." />,
   },
   {
     selector: '[data-tut="reactour__sign-up"]',
     content: <FormattedMessage
       id="Header205"
-      defaultMessage="You will receive notifications regarding updates with your account (orders, transactions) and monthly updates about our project" />,
+      defaultMessage="Subscribe to receive notifications regarding your account (orders, transactions) and AtomicSwapWallet's monthly updates." />,
   },
   {
     selector: '[data-tut="reactour__goTo"]',

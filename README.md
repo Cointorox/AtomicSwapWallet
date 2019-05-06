@@ -5,8 +5,6 @@ Atomic swap cryptocurrency protocol. Live version here: https://Atomicswapwallet
 
 
 
-Atomic swap library at http://github.com/swaponline/swap.core.
-
 ![](https://graphs.waffle.io/swaponline/swap.react/throughput.svg)
 
 
@@ -43,7 +41,7 @@ npm run build:mainnet-widget 0x9E4AD79049282F942c1b4c9b418F0357A0637017 noxon 0 
 tar czf my-widget.tar.gz build-mainnet-widget
 ```
 2. Upload to your domain (https://domain.com/build-mainnet-widget)
-3. Embed via iframe like 
+3. Embed via iframe like
 ```
 <iframe src="build-mainnet-widget/index.html" border=0 style="botder:0;width:800px;height:700px"></iframe>
 ```

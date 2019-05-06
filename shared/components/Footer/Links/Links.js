@@ -9,31 +9,26 @@ import { FormattedMessage } from 'react-intl'
 const link = [
   [
     /* Наши продукты (Our products) */
-    { header: <FormattedMessage id="FooterOurProductsHeader" defaultMessage="Our products" />,
+    { header: <FormattedMessage id="FooterOurProductsHeader" defaultMessage="Products" />,
     /* Криптовалютный обменник (Exchange) https://Atomicswapwallet.io/exchange */
       link : links.footer.exchange, title: <FormattedMessage id="FooterOurProductsExchange" defaultMessage="Exchange" /> },
     /* Криптовалютый онлайн кошелек (Wallet) https://Atomicswapwallet.io */
     { link : links.footer.wallet, title: <FormattedMessage id="FooterOurProductsWallet" defaultMessage="Wallet" /> },
-    /* Виджет для сайтов (Widget) https://widget.Atomicswapwallet.io/ */
-    { link : links.footer.widget, title: <FormattedMessage id="FooterOurProductsWidget" defaultMessage="Widget" /> },
-    /* Chrome extantion https://chrome.google.com/webstore/detail/swaponline/oldojieloelkkfeacfinhcngmbkepnlm */
-    { link : links.footer.chromeextantion, title: <FormattedMessage id="FooterOurProductsChromeExtantion" defaultMessage="Chrome extantion" /> },
-    /* Bank dashboard */
-    { link: links.footer.bankdashboard, title: <FormattedMessage id="FooterOurProductsBankDashboard" defaultMessage="Bank dashboard" /> },
+    { link : links.footer.chromeextension, title: <FormattedMessage id="FooterOurProductsChromeExtension" defaultMessage="Chrome Extension" /> },
   ],
   [
     /* Партнерам (Partnership) */
     { header: <FormattedMessage id="FooterPartnershipHeader" defaultMessage="Partnership" />,
     /* Для стейблкоинов (For stablecoins) https://wiki.swap.online/for_stablecoins/ */
-      link: links.footer.forstablecoin, title: <FormattedMessage id="FooterPartnershipForstablecoin" defaultMessage="For stablecoins" /> },
+      link: links.footer.forstablecoin, title: <FormattedMessage id="FooterPartnershipForstablecoin" defaultMessage="Host dIEO" /> },
     /* Другим DEX (For DEXes) https://wiki.swap.online/for_dexs/ */
-    { link: links.footer.fordexses, title: <FormattedMessage id="FooterPartnershipForDEXes" defaultMessage="For DEXes" /> },
+    { link: links.footer.fordexses, title: <FormattedMessage id="FooterPartnershipForDEXes" defaultMessage="Whitelabel Solution" /> },
     /* Блокчейнам (For Blockchains) https://wiki.swap.online/for_blockchains/ */
-    { link: links.footer.forblockchains, title: <FormattedMessage id="FooterPartnershipForBlockchains" defaultMessage="For Blockchains" /> },
+    { link: links.footer.forblockchains, title: <FormattedMessage id="FooterPartnershipForBlockchains" defaultMessage="List Coin" /> },
     /* Токенам (For ERC20 tokens) https://listing.Atomicswapwallet.io/ */
-    { link: links.footer.forerc20tokens, title: <FormattedMessage id="FooterPartnershipForERC20" defaultMessage="For ERC20 tokens" /> },
+    { link: links.footer.forerc20tokens, title: <FormattedMessage id="FooterPartnershipForERC20" defaultMessage="List Token" /> },
     /* Виджет для криптосайтов (For news websites) https://widget.Atomicswapwallet.io/ */
-    { link: links.footer.fornewswebsites, title: <FormattedMessage id="FooterPartnershipForNewsWebsites" defaultMessage="For news websites" /> },
+    { link: links.footer.fornewswebsites, title: <FormattedMessage id="FooterPartnershipForNewsWebsites" defaultMessage="Press Opportunities" /> },
   ],
   [
     /* Технология (Technology) */
@@ -44,24 +39,18 @@ const link = [
     { link: links.footer.wiki, title: <FormattedMessage id="FooterTechnologyWiki" defaultMessage="Wiki" /> },
     /* GitHub https://github.com/swaponline */
     { link: links.footer.github, title: <FormattedMessage id="FooterTechnologyGithub" defaultMessage="GitHub" /> },
-    /* Сравнение (Comparsion) */
-    { link: links.footer.comparsion, title: <FormattedMessage id="FooterTechnologyComparsion" defaultMessage="Comparsion" /> },
-    /* LN research */
-    { link: links.footer.lnresearch, title: <FormattedMessage id="FooterTechnologyLNResearch" defaultMessage="LN" />, icon: 'lightling' },
   ],
   [
     /* О компании (About company) */
     { header: <FormattedMessage id="FooterAboutHeader" defaultMessage="About company" />,
     /* О компании (About company) https://wiki.swap.online/about-swap-online/ */
-      link: links.footer.about, title: <FormattedMessage id="FooterAboutCompany" defaultMessage="About company" /> },
+      link: links.footer.about, title: <FormattedMessage id="FooterAboutCompany" defaultMessage="About Us" /> },
     /* Условия использования (Agreements) https://drive.google.com/file/d/0Bz2ZwZCmFtj_Nm9qSm0tUm9Ia1kwVGhWRlVlVXRJTGZtYW5N/view?usp=sharing */
-    { link: links.footer.agreements, title: <FormattedMessage id="FooterAboutAgreements" defaultMessage="Agreements" /> },
+    { link: links.footer.agreements, title: <FormattedMessage id="FooterAboutAgreements" defaultMessage="Terms of Use" /> },
     /* Политика конфиденциальности (Privacy policy) https://drive.google.com/file/d/1LdsCOfX_pOJAMqlL4g6DfUpZrGF5eRe9/view?usp=sharing */
     { link: links.footer.privacypolicy, title: <FormattedMessage id="FooterAboutPrivacyPolicy" defaultMessage="Privacy policy" /> },
-    /* Юридическая правомерность (Legal) https://drive.google.com/file/d/0Bz2ZwZCmFtj_WlNkY0ZYN0ZpNUo2VFVEeW9rWEVoTlNja0VZ/view?usp=sharing */
-    { link: links.footer.legal, title: <FormattedMessage id="FooterAboutLegal" defaultMessage="Legal" /> },
     /* Контакты (Contacts) https://wiki.swap.online/contacts-swap-online/ */
-    { link: links.footer.contacts, title: <FormattedMessage id="FooterAboutContacts" defaultMessage="Contacts" /> },
+    { link: links.footer.contacts, title: <FormattedMessage id="FooterAboutContacts" defaultMessage="Contact Us" /> },
   ],
 ]
 
